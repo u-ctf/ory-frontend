@@ -4,6 +4,7 @@ import { defaultConfig, RouteRegistrator } from "../pkg"
 import sdk from "../pkg/sdk"
 import {
   defaultLightTheme,
+  defaultDarkTheme,
   RegisterOryElementsExpress,
 } from "@ory/elements-markup"
 import express from "express"

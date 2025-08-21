@@ -6,16 +6,20 @@
   </head>
   <body>
     <main data-testid="app-express">
-      <div class="app-container">
-        {{{nav}}}
-        <div class="container spacing-32">
-          <div class="content">
-            {{{body}}}
-          </div>
-          {{> ory_branding}}
-        </div>
-      </div>
+      {{{body}}}
       {{> scripts }}
     </main>
+    <style>
+      div:has( > [class*="ory_elements__button"]) {
+        align-self: center;
+      }
+      [class*="ory_elements__typography_size_headline37"] {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+      [class*="ory_elements__typography_size_headline26"] {
+        font-size: 1.25rem;
+      }
+    </style>
   </body>
 </html>

@@ -16,11 +16,9 @@ import {
   registerLoginRoute,
   registerRecoveryRoute,
   registerRegistrationRoute,
-  registerSessionsRoute,
   registerSettingsRoute,
   registerStaticRoutes,
   registerVerificationRoute,
-  registerWelcomeRoute,
   registerLogoutRoute,
 } from "./routes"
 import { csrfErrorHandler } from "./routes/csrfError"
@@ -91,8 +89,8 @@ registerRecoveryRoute(router)
 registerRegistrationRoute(router)
 registerSettingsRoute(router)
 registerVerificationRoute(router)
-registerSessionsRoute(router)
-registerWelcomeRoute(router)
+// registerSessionsRoute(router)
+// registerWelcomeRoute(router)
 registerErrorRoute(router)
 
 // all routes registered under the /consent path are protected by CSRF

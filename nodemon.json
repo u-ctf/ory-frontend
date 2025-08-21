@@ -3,13 +3,13 @@
   "ext": "ts",
   "exec": "ts-node ./src/index.ts",
   "env": {
-    "CSRF_COOKIE_NAME": "ax-csrf-cookie",
+    "CSRF_COOKIE_NAME": "__HOST-localhost-x-csrf-token",
     "COOKIE_SECRET": "I_AM_VERY_SECRET",
     "CSRF_COOKIE_SECRET": "I_AM_VERY_SECRET_TOO",
     "DANGEROUSLY_DISABLE_SECURE_CSRF_COOKIES": "true",
-    "ORY_SDK_URL": "http://localhost:4433",
-    "KRATOS_PUBLIC_URL": "http://localhost:4433",
+    "KRATOS_PUBLIC_URL": "https://kratos.tristan.dev.uctf.io",
     "KRATOS_ADMIN_URL": "http://localhost:4434",
+    "HYDRA_ADMIN_URL": "http://localhost:4445",
     "NODE_ENV": "development"
   }
 }

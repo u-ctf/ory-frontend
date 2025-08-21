@@ -160,11 +160,11 @@ export const handlebarsHelpers: UnknownObject = {
       children: text,
     })
   },
-  oryBranding: () =>
-    Typography({
-      children: `Protected by `,
-      type: "regular",
-      size: "tiny",
-      color: "foregroundSubtle",
-    }),
+  // oryBranding: () =>
+  //   Typography({
+  //     children: `Protected by `,
+  //     type: "regular",
+  //     size: "tiny",
+  //     color: "foregroundSubtle",
+  //   }),
 }

@@ -53,12 +53,12 @@ export const createSettingsRoute: RouteCreator =
             flow,
             logoutUrl,
             navClassName: "main-nav",
-            headerContainerClassName: "spacing-32",
+            headerContainerClassName: "spacing-4",
             dividerClassName: "divider-left",
-            settingsCardContainerClassName: "spacing-32",
+            settingsCardContainerClassName: "spacing-4",
           },
           {
-            backUrl: flow.return_to || getUrlForFlow(kratosBrowserUrl, "login"),
+            // backUrl: flow.return_to || getUrlForFlow(kratosBrowserUrl, "login"),
             flow,
             logoutUrl,
           },
@@ -70,7 +70,7 @@ export const createSettingsRoute: RouteCreator =
         res.render("settings", {
           layout: "settings",
           nodes: flow.ui.nodes,
-          nav: settingsScreen.Nav,
+          // nav: settingsScreen.Nav,
           settingsScreen: settingsScreen.Body,
         })
       })
